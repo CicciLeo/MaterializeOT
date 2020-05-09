@@ -102,8 +102,45 @@
       </style>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+      <section>
+        <div class="parallax-container">
+          <div class="parallax"><img src="assets/collage.jpg"></div>
+        </div>
+      </section>
+
+      <style>
+      .parallax-container {
+        position: relative;
+        overflow: hidden;
+        height: 500px;
+      }
+
+      .parallax-container .parallax {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+      }
+
+      .parallax-container .parallax img {
+        opacity: 0;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        min-width: 100vw;
+        min-height: 100vh;
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+      }
+      </style>
     </main>
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
