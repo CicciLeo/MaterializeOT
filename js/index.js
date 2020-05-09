@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var real_height = calc_real_height();
 
     resize_logo(real_height, y_offset);
-		set_padding_height(real_height, y_offset);
+/*		set_padding_height(real_height, y_offset);*/
 
 		toggle_back_to_top(y_offset);
 	}
