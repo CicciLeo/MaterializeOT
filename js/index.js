@@ -48,11 +48,12 @@ document.addEventListener('DOMContentLoaded', function() {
 		document.getElementById("logo").style.maxHeight = dinamic_height +"px";
     document.getElementById("logo").style.marginTop = real_height*0.01 +"px";
     document.getElementById("navbar-content").style.height = dinamic_height +"px";
-    document.getElementById("navbar-bordo").style.height = real_height*0.05 +"px";
+    
+    console.log("dinamic_height: " + dinamic_height + "  --  real_height: " + real_height);
 	}
 
 	function set_padding_height(real_height, y_offset) {
-    var dinamic_height = real_height * 1.01 ;
+    var dinamic_height = real_height;
 
 		document.getElementsByTagName("main")[0].style.marginTop = dinamic_height + "px";
 	}
