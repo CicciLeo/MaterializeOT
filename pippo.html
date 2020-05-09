@@ -59,7 +59,28 @@
 
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+      <div id="foto-collage"></div>
+      <style>
+      #foto-collage {
+      	height: 50vh;
+      	background-image: url('assets/collage.jpg');
+        background-color: White;
+        background-attachment: fixed;
+      	background-repeat: no-repeat;
+      	background-size: auto 100vh;
+        /*transform: scale(-1.25);*/
+      }
+      @media (orientation: landscape) {
+        #foto-collage {
+        	background-size: 100vw auto;
+          /*transform: scale(-1.25);*/
+        }
+      }
+      </style>
+
     </main>
+
+
 
 
     <footer class="page-footer cyan lighten-5 black-text">
