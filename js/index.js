@@ -46,13 +46,13 @@ document.addEventListener('DOMContentLoaded', function() {
 		if (dinamic_height < 75) dinamic_height = 75;
 
 		document.getElementById("logo").style.maxHeight = dinamic_height +"px";
-    document.getElementById("logo").style.marginTop = dinamic_height*0.075 +"px";
+    document.getElementById("logo").style.marginTop = real_height*0.01 +"px";
     document.getElementById("navbar-content").style.height = dinamic_height +"px";
-    document.getElementById("navbar-bordo").style.height = dinamic_height*0.22 +"px";
+    document.getElementById("navbar-bordo").style.height = real_height*0.05 +"px";
 	}
 
 	function set_padding_height(real_height, y_offset) {
-    var dinamic_height = real_height - (y_offset * 0.22);
+    var dinamic_height = real_height * 1.01 ;
 
 		document.getElementsByTagName("main")[0].style.marginTop = dinamic_height + "px";
 	}
