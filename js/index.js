@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
  });
 
   window.onscroll = function () {
-    Document.exitFullscreen()
 		var y_offset = window.pageYOffset;
     var real_height = calc_real_height();
 
@@ -20,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
 
 	window.onload = function () {
-    Document.exitFullscreen()
 		var y_offset = window.pageYOffset;
 		var real_height = calc_real_height();
 
@@ -31,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
 
 	window.onresize = function () {
-    Document.exitFullscreen()
 		var y_offset = window.pageYOffset;
 		var real_height = calc_real_height();
 
