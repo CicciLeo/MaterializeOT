@@ -70,40 +70,82 @@
       </ul>
 
       <main>
+
+
+        <!-- Container element --><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <div class="parallax1"></div>
+
         <style>
         html, body {
           overflow-x: hidden;
         }
-          .parallax {
+          .parallax1 {
             /* The image used */
             background-image: url("assets/collage.jpg");
 
             /* Set a specific height */
             height: 500px;
 
+
             /* Create the parallax scrolling effect */
             background-attachment: fixed;
             background-position: center top;
             background-repeat: no-repeat;
             background-size: auto 110vh;
-            transform:  scale(1.1);
+
           }
 
-          @media (orientation: landscape) {
-            .parallax {
+          @media (min-aspect-ratio: 2048/1448) {
+            .parallax1 {
               background-size: 110vw auto;
             }
           }
         </style>
 
-        <!-- Container element --><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-        <div class="parallax"></div>
+        <div class="parallax2"></div>
+
+        <style>
+
+          .parallax2 {
+            /* The image used */
+            background-image: url("assets/collage.jpg");
+
+            /* Set a specific height */
+            height: 500px;
+
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: auto 100vh;
+            transform:  scale(1.1);
+          }
+
+          @media (orientation: landscape) {
+            .parallax2 {
+              background-size: 100vw auto;
+            }
+          }
+        </style>
 
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <div class="parallax-container">
+          <div class="parallax"><img src="assets/collage.jpg"></div>
+        </div>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
       </main>
-
-
 
     <footer class="page-footer cyan lighten-5 black-text">
 
