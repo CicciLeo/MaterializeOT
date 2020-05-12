@@ -36,16 +36,16 @@
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
           <ul class="right hide-on-med-and-down">
-            <li><a href="chi_siamo.html">Chi siamo</a></li>
-            <li><a class='dropdown-trigger' href='#' data-target='dropdown1'>Corsi</a></li>
+            <li><a href="chi_siamo.html" class="indigo-text text-darken-4" style="font-weight: 500; font-size: 1.5rem">Chi siamo</a></li>
+            <li><a class='dropdown-trigger indigo-text text-darken-4' href='#' data-target='dropdown1' style="font-weight: 500; font-size: 1.5rem">Corsi</a></li>
               <ul id='dropdown1' class='dropdown-content'>
-                <li><a href="#!">Corsi</a></li>
+                <li><a href="#!" class="indigo-text text-darken-4">Corsi</a></li>
                 <li class="divider" tabindex="-1"></li>
-                <li><a href="sport_bambini.html">Bambini</a></li>
-                <li><a href="#!">Adulti</a></li>
+                <li><a href="sport_bambini.html" class="indigo-text text-darken-4">Bambini</a></li>
+                <li><a href="#!" class="indigo-text text-darken-4">Adulti</a></li>
               </ul>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Contatti</a></li>
+            <li><a href="#" class="indigo-text text-darken-4" style="font-weight: 500; font-size: 1.5rem">News</a></li>
+            <li><a href="#" class="indigo-text text-darken-4" style="font-weight: 500; font-size: 1.5rem">Contatti</a></li>
           </ul>
 
           <!-- TODO: link social
@@ -61,13 +61,13 @@
       </nav>
 
       <!-- Barra laterale scorrevole -->
-      <ul class="sidenav" id="mobile-demo">
-        <li><a href="chi_siamo.html">Chi siamo</a></li>
+      <ul class="sidenav blue lighten-5" id="mobile-demo">
+        <li><a href="chi_siamo.html" class="indigo-text text-darken-4">Chi siamo</a></li>
         <li><a class="subheader" href="#!">Corsi</a></li>
-          <li class="indented"><a href="sport_bambini.html">Bambini</a></li>
-          <li class="indented"><a href="#!">Adulti</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Contatti</a></li>
+          <li class="indented" class=""><a class="indigo-text text-darken-4" href="sport_bambini.html">Bambini</a></li>
+          <li class="indented" class=""><a class="indigo-text text-darken-4" href="#!">Adulti</a></li>
+        <li><a href="#" class="indigo-text text-darken-4">News</a></li>
+        <li><a href="#" class="indigo-text text-darken-4">Contatti</a></li>
       </ul>
 
     </header> <!-- // intestazione -->
@@ -79,7 +79,7 @@
     <!-- Parte principale -->
     <main>
 
-      <!-- Olistik per bambini -->
+      <!-- Olistik per bambini
       <section class="section no-pad-top">
 
         <picture>
@@ -95,9 +95,9 @@
             <br><br><a class="btn blue waves-effect waves-light">Scopri di più</a>
         </div>
 
-      </section>
+      </section>-->
 
-      <!-- Olistik per adulti -->
+      <!-- Olistik per adulti
       <section class="section">
         <img src="assets/adulti.jpg" class="fill-view" alt="Attività fisica per adulti">
         <div class="container center-align">
@@ -108,12 +108,44 @@
     			<br>dolor sit amet, consectetur adipiscing elit. Suspendisse sed tempus elit. Donec placerat arcu vel tellus malesuada semper. Ut cursus, neque eget vehicula molestie, sem quam aliquet quam, ut scelerisque ex urna et orci. Integer scelerisque turpis nec dui mollis semper. Suspendisse ac tincidunt eros. Nunc interdum ultrices nisi id scelerisque.
     			<br><br><a class="btn blue waves-effect waves-light">Scopri di più</a>
     		</div>
-      </section>
+      </section>-->
 
       <!-- Parallax collage fotografico -->
-      <section class="section">
-        <div id="foto-collage"></div>
+      <section class="section no-pad-top">
+        <div id="foto-collage2" style="text-align: center">
+          <h1 class="white-text"><br><br><br><br><br><br>Il tuo totale benessere</h1>
+        </div>
       </section>
+
+
+      <!-- Altre attività -->
+      <section class="section">
+        <div class="container">
+          <div class="row">
+
+            <!-- Olistik per i bambini -->
+            <div class="col s12 l6">
+              <div class="card hoverable">
+                <div class="card-image">
+                  <img src="assets/2-2.jpg">
+                  <span class="card-title"><h1>Olistik per bambini</h1></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Olistik per gli adulti -->
+            <div class="col s12 l6">
+              <div class="card hoverable">
+                <div class="card-image">
+                  <img src="assets/2-2.jpg">
+                  <span class="card-title">Olistik per adulti</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section> <!-- // Altre attività -->
 
       <!-- Altre attività -->
       <section class="section">
@@ -122,34 +154,20 @@
 
             <!-- Animazione feste -->
             <div class="col s12 l4">
-              <div class="card">
+              <div class="card hoverable">
                 <div class="card-image">
                   <img src="assets/sports/calcio.jpg">
-                </div>
-                <div class="card-content">
                   <span class="card-title">Animazione feste</span>
-                  <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="card-action">
-                  <a href="#">This is a link</a>
                 </div>
               </div>
             </div>
 
             <!-- Valutazione posturale -->
             <div class="col s12 l4">
-              <div class="card">
+              <div class="card hoverable">
                 <div class="card-image">
                   <img src="assets/sports/calcio.jpg">
                   <span class="card-title">Valutazione posturale</span>
-                </div>
-                <div class="card-content">
-                  <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="card-action">
-                  <a href="#">This is a link</a>
                 </div>
               </div>
             </div>
@@ -157,8 +175,8 @@
             <!-- Massaggi -->
             <div class="col s12 l4">
               <div class="card hoverable">
-                <div class="card-image"><img src="assets/sports/calcio.jpg"></div>
-                <div class="card-content">
+                <div class="card-image">
+                  <img src="assets/sports/calcio.jpg">
                   <span class="card-title">Massaggi</span>
                 </div>
               </div>
@@ -172,7 +190,7 @@
 
 
     <!-- Piè di pagina -->
-    <footer class="page-footer cyan lighten-5 black-text">
+    <footer class="page-footer blue lighten-5 black-text">
 
       <!-- Logo, link social e Partnership -->
       <div class="container">
@@ -212,9 +230,20 @@
         </div>
       </div>
 
-      <!-- Freccetta per tornare in alto -->
+      <!-- Freccetta per tornare in alto
       <div class="fixed-action-btn">
         <a id="back-to-top" class="btn-floating btn-large blue waves-effect waves-light scale-transition scale-out"><i class="material-icons">expand_less</i></a>
+      </div>-->
+
+      <div class="fixed-action-btn">
+        <a class="btn-floating btn-large blue">
+          <img src="assets/icons/like_large.png"><a href="#" class="btn-floating mobile-fab-tip">Seguici sui social</a>
+        </a>
+        <ul>
+          <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+          <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+          <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+        </ul>
       </div>
 
     </footer> <!-- // piè di pagina -->
