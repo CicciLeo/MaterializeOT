@@ -1,0 +1,41 @@
+
+.overlay-container {
+  position: relative;
+  background: linear-gradient(65deg, rgba(46,204,113,0.7), rgba(243,156,18,0.7));
+  border-radius: 50%;
+}
+
+.overlay-img-back {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+.overlay-fore {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay-container:hover .overlay-img-back {
+  opacity: 0.2;
+}
+
+.overlay-container:hover .overlay-fore {
+  opacity: 1;
+}
+
+.overlay-text {           /*FORSE LO PUOI TOGLIERE??? */
+  color: #fafafa;
+  font-size: 24px;
+  padding: 16px 32px;
+}

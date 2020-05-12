@@ -1,0 +1,143 @@
+
+nav h1 {
+  margin: 0;
+}
+
+.nav-wrapper > ul {
+  position: relative;
+}
+
+  #navbar-content {
+    height: 75px;       /*min-height*/
+    background-color: white;
+    background-image: url('../assets/header/linea.png');
+    background-position: bottom center;
+    background-size: auto;
+    background-repeat: repeat;
+    position:fixed;
+    top: 0;
+    z-index: 997;
+  }
+
+  #logo {
+    max-height: 75px;
+  }
+
+  #navbar-bordo {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      height: 95px;
+      background-image: url('../assets/header/base.png');
+      background-position: center bottom;
+      background-repeat: repeat-x;
+      z-index: 900;
+  }
+
+  .sidenav > li.indented {
+    padding-left: 1rem;
+  }
+
+  main {
+    margin-top: -15px;
+  }
+
+  /*h2 {
+  	color: #0091EA;
+  }*/
+
+  .fill-view {
+    width: 100%;
+    height: auto;
+  }
+
+  div.wrap-content {
+  	display: inline-block;
+  }
+
+  div.wrap-content::after {
+    content: "\A";
+    white-space: pre;
+  }
+
+  #foto-collage {
+    height: 100vh;
+    background-image: url('../assets/collage.jpg');
+    background-color: White;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #footer-logo{
+    max-height: 100px;
+  }
+
+
+
+
+  /* Body Style
+
+  :root {
+  	font-size: 1.05rem;
+  }
+
+  @media (min-width:576px) {
+  	:root {
+  		font-size: 1.1rem;
+  	}
+  }
+
+  @media (min-width:768px) {
+  	:root {
+  		font-size: 1.2rem;
+  	}
+  }
+
+  @media (min-width:992px) {
+  	:root {
+  		font-size: 1.3rem;
+  	}
+  }
+
+  @media (min-width:1200px) {
+  	:root {
+  		font-size: 1.4rem;
+  	}
+  }
+
+linear-gradient(to bottom, #001e96, #0040af, #005ec3, #007bd4, #0097e1, #00b2f3)
+
+hr {
+	border-top: 2px solid #0091EA;
+	margin: 0% calc(40%  - 100px);
+}
+
+a, a:hover {
+	text-decoration: none;
+	color:inherit;
+	pointer-events:all;
+}
+
+#footer-logo{
+	max-height: 100px;
+}
+
+.footer-button {
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 0.75rem;
+	border-color: gray;
+	padding: 0.4rem 1rem 0.4rem 0;
+	margin-top: 1rem;
+}
+
+footer .fab{
+	padding: 0px 10px;
+	width: auto;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+}
+
+*/
