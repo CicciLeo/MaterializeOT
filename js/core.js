@@ -1,7 +1,9 @@
-/*var back_to_top = document.getElementById("back-to-top");
+var back_to_top = document.getElementById("back-to-top");
 
-window.addEventListener('scroll', toggle_back_to_top);
-back_to_top.addEventListener('click', scrollToTop);*/
+try {
+  window.addEventListener('scroll', toggle_back_to_top);
+  back_to_top.addEventListener('click', scrollToTop);
+} catch (err) {}
 
 document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('.sidenav');
@@ -16,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.fixed-action-btn');
     var instances = M.FloatingActionButton.init(elems, {
-      direction: 'left',
       hoverEnabled: false
     });
   });
