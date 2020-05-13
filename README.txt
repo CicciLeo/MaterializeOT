@@ -1,6 +1,7 @@
 Redmi note 7: 390px                 slategray, dimgray, gray, darkgray, lightgray, gainsboro, WhiteSmoke, ghostwhite, mintcream, snow, ivory
 
 
+
 primary: blue;
 primary-dark: indigo darken-4;
 pramary-light: blue lighten-5;

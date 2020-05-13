@@ -1,9 +1,9 @@
-var back_to_top = document.getElementById("back-to-top");
+/*var back_to_top = document.getElementById("back-to-top");
 
 try {
   window.addEventListener('scroll', toggle_back_to_top);
   back_to_top.addEventListener('click', scrollToTop);
-} catch (err) {}
+} catch (err) {}*/
 
 document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('.tooltipped');
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-function toggle_back_to_top() {
+/*function toggle_back_to_top() {
   if (window.pageYOffset > (window.innerHeight / 2) ) {
     back_to_top.classList.remove("scale-out");
     back_to_top.classList.add("scale-in");
@@ -47,4 +47,4 @@ function scrollToTop () {
   } else {
     window.scrollTo(0, 0);
   }
-}
+}*/

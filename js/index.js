@@ -24,3 +24,13 @@ function resize_logo(max_height, y_offset) {
 	document.getElementById("logo").style.maxHeight = height +"px";
   document.getElementById("navbar-content").style.height = height +"px";
 }
+
+var PIPPO = 0;
+
+if(PIPPO==0) {
+	document.getElementById("pippo").classList.add("pulse");
+}
+
+document.getElementById("pippo").onclick = function () {
+	document.getElementById("pippo").classList.remove("pulse");
+}
