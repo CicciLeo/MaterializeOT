@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="it">
+
+  <head>
+
+    <!--Import Google Icon Font  MAGARI POI EVITA, USA I SVG SCARICATI-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Import css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="css/core.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta charset="utf-8">
+
+    <!-- Titolo della pagina -->
+    <title>Olistik Training</title>
+
+  </head>
+
+  <body>
+
+    <!-- Barra laterale scorrevole -->
+    <ul class="sidenav blue lighten-5" id="mobile-demo">
+      <li><a href="chi_siamo.html">Chi siamo</a></li>
+      <li><a class="subheader" href="#!">Corsi</a></li>
+        <li class="indented" class=""><a href="sport_bambini.html">Bambini</a></li>
+        <li class="indented" class=""><a href="#!">Adulti</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Contatti</a></li>
+    </ul>
+
+    <!-- corpo centrale sempre visibile -->
+    <div class="viewport" id="viewport">
+
+      <!-- Barra di navigazione con logo Olistik -->
+      <nav id="navbar-content" class="z-depth-0">
+        <div class="nav-wrapper">
+
+          <h1><a href="#" class="brand-logo center">
+            <img id="logo" alt="Olistik Training - Sport" src="assets/logo/logo_bianco.png">
+          </a></h1>
+
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+          <ul class="right hide-on-med-and-down">
+            <li><a href="chi_siamo.html">Chi siamo</a></li>
+            <li><a class='dropdown-trigger' href='#' data-target='dropdown1'>Corsi</a></li>
+              <ul id='dropdown1' class='dropdown-content'>
+                <li><a href="#!">Corsi</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="sport_bambini.html">Bambini</a></li>
+                <li><a href="#!">Adulti</a></li>
+              </ul>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contatti</a></li>
+          </ul>
+
+        </div>
+        <!-- Bordo della barra di navigazione-->
+        <div id="navbar-bordo" style="height: 20px"></div>
+      </nav>
+
+      <div> <!-- questo serve per il parallasse -->
+
+        <!-- immagine parallax -->
+        <div class="parallax" style="background-image: url('assets/index/prato.jpg');" parallax="0.2"></div>
+        <div class="scene woods">
+          <h1>Il tuo totale benessere</h1>
+        </div>
+
+        <!-- Attività principali -->
+        <section class="section">
+          <div class="container">
+            <div class="row">
+
+              <!-- Olistik per i bambini -->
+              <div class="col s12 m6">
+                <a href="sport_bambini.html">
+                  <div class="card hoverable">
+                    <div class="card-image">
+                      <img src="assets/index/bambini.jpg">
+                      <span class="card-title">Olistik per bambini</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Olistik per gli adulti -->
+              <div class="col s12 m6">
+                <a href="#!">
+                  <div class="card hoverable">
+                    <div class="card-image">
+                      <img src="assets/2-2.jpg">
+                      <span class="card-title">Olistik per adulti</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </section> <!-- // principali -->
+
+        <!-- Altre attività -->
+        <section class="section">
+          <div class="container">
+            <div class="row">
+
+              <!-- Animazione -->
+              <div class="col s12 m4">
+                <a href="#!">
+                  <div class="card hoverable">
+                    <div class="card-image">
+                      <img src="assets/sports/calcio.jpg">
+                      <span class="card-title">Animazione</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Valutazione posturale -->
+              <div class="col s12 m4">
+                <a href="#!">
+                  <div class="card hoverable">
+                    <div class="card-image">
+                      <img src="assets/sports/calcio.jpg">
+                      <span class="card-title">Valutazione posturale</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Massaggi -->
+              <div class="col s12 m4">
+                <a href="#!">
+                  <div class="card hoverable">
+                    <div class="card-image">
+                      <img src="assets/index/massaggi.jpg">
+                      <span class="card-title">Massaggi</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </section> <!-- // Altre attività -->
+
+        <!-- Piè di pagina -->
+        <footer class="page-footer blue lighten-5 black-text">
+
+          <!-- Logo, link social e Partnership -->
+          <div class="container">
+            <div class="row">
+
+              <div class="col l6 s12">
+                <h5><img id="footer-logo" alt="Olistik Training - Sport" src="assets/logo/logo.png"></h5>
+                <p class="grey-text">Il tuo totale benessere</p>
+              </div>
+
+              <div class="col l6 s12">
+                <h5>Partnership</h5>
+                <ul>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Copyright -->
+          <div class="footer-copyright grey-text">
+            <div class="container">
+            Copyright © 2020 Olistik Training  |  Creato da Gabriele Amodio  |  Tutti i diritti riservati
+            </div>
+          </div>
+
+        </footer> <!-- // piè di pagina -->
+
+      </div>
+
+    </div>
+
+
+    <!-- bottone fisso in basso a destra -->
+    <div class="fixed-action-btn">
+      <a id="pippo" class="chipPROVA blue"><p>Seguici</p><img src="assets/icons/like.svg"></a>
+      <ul>
+        <li><a href="https://www.facebook.com/OlistikTraining/" class="btn-floating btn-large"><img src="assets/icons/facebook.svg"></a></li>
+        <li><a href="https://www.instagram.com/olistik_training" class="btn-floating btn-large"><img src="assets/icons/instagram.svg"></a></li>
+        <li><a href="tel:+393665272270" class="btn-floating btn-large"><img src="assets/icons/whatsapp.svg"></a></li>
+      </ul>
+    </div>
+
+
+    <script src="scripts/parallax.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        initializeParallax(document.querySelector('.viewport'));
+      });
+    </script>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <!-- Scritp personali -->
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/core.js"></script>
+
+
+  </body>
+
+</html>
