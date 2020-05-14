@@ -11,8 +11,7 @@ document.getElementById("MANNAGGIALAPUTTANA").onscroll = function () {
 function adjust_navbar_and_padding() {
 	var max_height = calc_max_height();
 	resize_logo(max_height, window.pageYOffset);
-	/*document.getElementsByTagName("main")[0].style.marginTop = max_height + "px";*/
-  document.getElementById("navbar-bordo").style.marginTop = (max_height - 75) + "px";
+  /*document.getElementById("navbar-bordo").style.marginTop = (max_height - 75) + "px";*/
 }
 
 function adjust_navbar () {
