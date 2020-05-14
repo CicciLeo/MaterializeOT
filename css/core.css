@@ -81,17 +81,6 @@ nav h1 {
     margin-top: -25px;
   }
 
-  .mobile-fab-tip {
-	position: fixed;
-	right: 85px;
-	padding:0px 0.5rem;
-	text-align: right;
-	background-color: #323232;
-	border-radius: 2px;
-	color: #FFF;
-	width:auto;
-}
-
   section h2 {
   	color: #2962FF;
   }
@@ -115,9 +104,15 @@ nav h1 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto 110vh;
     color: #FFFFFF;
   }
+
+@media screen and (min-aspect-ratio: 3/2) {
+  .parallax {
+    background-size: 110vw auto;
+  }
+}
 
   .row .col {
     padding-top: 0.75rem;
