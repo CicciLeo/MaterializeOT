@@ -13,7 +13,6 @@ nav h1 {
 
   #navbar-content {
     height: 75px;       /*min-height*/
-    background-color: white;
     background-image: url('../assets/header/linea.png');
     background-position: bottom center;
     background-size: auto;
@@ -36,6 +35,13 @@ nav h1 {
       background-position: center bottom;
       background-repeat: repeat-x;
       z-index: 900;
+  }
+
+  #mobile-demo {
+    background-image: url('../assets/header/linea.png');
+    background-position: bottom center;
+    background-size: auto;
+    background-repeat: repeat;
   }
 
   #navbar-content li a, #mobile-demo li a {
@@ -99,12 +105,17 @@ nav h1 {
     white-space: pre;
   }
 
+  .row .col {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
   .parallax {
     text-align: center;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto 110vh;
+    background-size: auto 110%;
     color: #FFFFFF;
   }
 
@@ -113,11 +124,6 @@ nav h1 {
     background-size: 110vw auto;
   }
 }
-
-  .row .col {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-  }
 
   #foto-collage {
     height: 100vh;
