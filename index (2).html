@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<!--
+
+Copyright 2016 Google Inc. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Sahitya|Share+Tech+Mono|Yanone+Kaffeesatz" rel="stylesheet">
+<style>
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-family: "Yanone Kaffeesatz";
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  line-height: 1.5em;
+}
+* {
+  box-sizing: border-box;
+}
+
+.scene {
+  height: 150vh;
+  padding: 5vh 10vw;
+}
+
+.parallax {
+  background-size: cover;
+  box-sizing: border-box;
+  width: 100%;
+  height: 130vh;
+  /* Since the parallax elements still consume space, we set the margin to undo
+     the height of this parallax element making it essentially consume 0 space.
+  */
+  margin-bottom: -130vh;
+}
+
+.header {
+  height: 70vh;
+}
+.parallax.header {
+  margin-bottom: -70vh;
+}
+
+.viewport {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+.woods:not(.header),
+.sunset:not(.header) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sunset:not(.header) {
+  align-items: flex-end;
+}
+
+.section {
+  position: relative;
+  height: auto;
+  background-color: #FFFFFF;
+}
+
+.solid {
+  z-index: 1;
+  position: relative;
+  height: 70vh;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: hsl(195, 16%, 49%);
+  box-shadow: -10px -10px 20px hsl(195, 16%, 49%);
+}
+
+.solid.star {
+  background-image: linear-gradient(hsla(240, 90%, 8%, 1) 0%, 99%, hsla(217,24%,71%,0) 100%);
+  box-shadow: -10px -10px 20px hsl(240, 90%, 8%);
+}
+.solid.woods {
+  background-color: hsl(195, 16%, 49%);
+  box-shadow: -10px -10px 20px hsl(195, 16%, 49%);
+}
+
+</style>
+<script src="scripts/parallax.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    initializeParallax(document.querySelector('.viewport'));
+  });
+</script>
+
+
+<!--Import Google Icon Font  MAGARI POI EVITA, USA I SVG SCARICATI-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!--Import css-->
+<link type="text/css" rel="stylesheet" href="css/materialize.min.css">
+<link type="text/css" rel="stylesheet" href="css/core.css">
+
+
+
+</head>
+<body>
+
+  <!-- Barra laterale scorrevole -->
+  <ul class="sidenav blue lighten-5" id="mobile-demo">
+    <li><a href="chi_siamo.html">Chi siamo</a></li>
+    <li><a class="subheader" href="#!">Corsi</a></li>
+      <li class="indented" class=""><a href="sport_bambini.html">Bambini</a></li>
+      <li class="indented" class=""><a href="#!">Adulti</a></li>
+    <li><a href="#">News</a></li>
+    <li><a href="#">Contatti</a></li>
+  </ul>
+
+    <div class="viewport" id="MANNAGGIALAPUTTANA">
+      <!-- Barra di navigazione con logo Olistik -->
+      <nav id="navbar-content" class="z-depth-0">
+        <div class="nav-wrapper">
+
+          <h1><a href="#" class="brand-logo center">
+            <img id="logo" alt="Olistik Training - Sport" src="assets/logo/logo_bianco.png">
+          </a></h1>
+
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+          <ul class="right hide-on-med-and-down">
+            <li><a href="chi_siamo.html">Chi siamo</a></li>
+            <li><a class='dropdown-trigger' href='#' data-target='dropdown1'>Corsi</a></li>
+              <ul id='dropdown1' class='dropdown-content'>
+                <li><a href="#!">Corsi</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="sport_bambini.html">Bambini</a></li>
+                <li><a href="#!">Adulti</a></li>
+              </ul>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contatti</a></li>
+          </ul>
+
+        </div>
+      </nav>
+
+
+      <div>
+
+        <div class="parallax" style="background-image: url('assets/index/prato.jpg');" parallax></div>
+        <div class="scene woods">
+          <h1>Gazing into the sea&nbsp;&nbsp;🐳</h1>
+          <h2>Some people don’t have <code>class</code></h2>
+        </div>
+        <!--div class="scene solid woods" parallax-cover>
+
+
+
+        </div-->
+      </div>
+
+
+      <!-- Attività principali -->
+      <section class="section" style="height: auto;">
+        <div class="container">
+          <div class="row">
+
+            <!-- Olistik per i bambini -->
+            <div class="col s12 m6">
+              <a href="sport_bambini.html">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    <img src="assets/index/bambini.jpg">
+                    <span class="card-title">Olistik per bambini</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Olistik per gli adulti -->
+            <div class="col s12 m6">
+              <a href="#!">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    <img src="assets/2-2.jpg">
+                    <span class="card-title">Olistik per adulti</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </section> <!-- // principali -->
+
+      <!-- Altre attività -->
+      <section class="section">
+        <div class="container">
+          <div class="row">
+
+            <!-- Animazione -->
+            <div class="col s12 m4">
+              <a href="#!">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    <img src="assets/sports/calcio.jpg">
+                    <span class="card-title">Animazione</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Valutazione posturale -->
+            <div class="col s12 m4">
+              <a href="#!">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    <img src="assets/sports/calcio.jpg">
+                    <span class="card-title">Valutazione posturale</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Massaggi -->
+            <div class="col s12 m4">
+              <a href="#!">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    <img src="assets/index/massaggi.jpg">
+                    <span class="card-title">Massaggi</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </section> <!-- // Altre attività -->
+
+
+  </div>
+
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+  <!-- Scritp personali -->
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/core.js"></script>
+
+</body>
+</html>

@@ -1,3 +1,6 @@
+body, html {
+  100%;
+}
 
 nav h1 {
   margin: 0;
@@ -17,7 +20,7 @@ nav h1 {
     background-position: bottom center;
     background-size: auto;
     background-repeat: repeat;
-    position:fixed;
+    position: sticky;
     top: 0;
     z-index: 997;
   }
@@ -110,12 +113,12 @@ nav h1 {
     padding-bottom: 0.75rem;
   }
 
-  .parallax {
+  /*.parallax {
     text-align: center;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto 110vh;
+    background-size: auto 110%;
     color: #FFFFFF;
   }
 
@@ -123,7 +126,7 @@ nav h1 {
   .parallax {
     background-size: 110vw auto;
   }
-}
+}*/
 
   #foto-collage {
     height: 100vh;

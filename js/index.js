@@ -2,6 +2,12 @@ window.addEventListener('load', adjust_navbar_and_padding);
 window.addEventListener('resize', adjust_navbar_and_padding);
 window.addEventListener('scroll', adjust_navbar);
 
+document.getElementById("MANNAGGIALAPUTTANA").onscroll = function () {
+	console.log("MANNAGGIALAPUTTANA");
+	resize_logo(calc_max_height(), document.getElementById("MANNAGGIALAPUTTANA").scrollTop)
+}
+
+
 function adjust_navbar_and_padding() {
 	var max_height = calc_max_height();
 	resize_logo(max_height, window.pageYOffset);
