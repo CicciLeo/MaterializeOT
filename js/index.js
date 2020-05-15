@@ -1,32 +1,26 @@
-window.addEventListener('load', adjust_navbar_and_padding);
-window.addEventListener('resize', adjust_navbar_and_padding);
-/*window.addEventListener('scroll', adjust_navbar);*/
+var max_height;
+var mainview = document.getElementById("mainview");
+var logo = document.getElementById("logo");
 
-document.getElementById("viewport").onscroll = function () {
-	resize_logo(calc_max_height(), document.getElementById("viewport").scrollTop);
+
+window.addEventListener('load', inizialize_height);
+window.addEventListener('resize', inizialize_height);
+
+function inizialize_height () {
+	max_height = window.innerWidth / 2.1;
+	if (max_height > 600) max_height = 600;
 }
 
 
-function adjust_navbar_and_padding() {
-	var max_height = calc_max_height();
-	resize_logo(max_height, document.getElementById("viewport").scrollTop);
-}
+mainview.addEventListener('scroll', resize_logo);
 
-/*function adjust_navbar () {
-  resize_logo(calc_max_height(), window.pageYOffset);
-}*/
-
-function calc_max_height () {
-	var max_height = window.innerWidth / 2.1;
-	return (max_height < 600) ? max_height : 600;
-}
-
-function resize_logo(max_height, y_offset) {
-	var height = (y_offset >= 0) ? (max_height - y_offset) : (max_height);
+function resize_logo () {
+	var height = max_height - mainview.scrollTop;
+	if (height > max_height) height = max_height;
 	if (height < 75) height = 75;
-	document.getElementById("logo").style.maxHeight = height +"px";
-  document.getElementById("navbar-content").style.height = height +"px";
+	logo.style.height = height +"px";
 }
+
 
 var PIPPO = 0;
 
